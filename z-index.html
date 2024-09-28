@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index ND Positioning</title>
+    <style>
+        h1{
+            font-family: fantasy;
+            font-weight:bold ;
+        }
+        .parent{
+            margin: auto;
+            background-color: brown;
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        .child1{
+            color: black;
+            background-color: skyblue;
+            position:absolute;
+            /* z-index: 1; */
+            height: 30px;
+            width: 50px;
+        }
+        .child1{
+            z-index: q;
+        }
+        .child2{
+            color: black;
+            background-color: skyblue;
+            position:absolute;
+            /* z-index: 1; */
+            height: 30px;
+            width: 50px;
+        }
+        .child2{
+            z-index: 1;
+        }
+        .child3{
+            color: black;
+            background-color: skyblue;
+            position:absolute;
+            height: 30px;
+            width: 50px;
+        }
+        .child4{
+            color: black;
+            background-color: skyblue;
+            position:absolute;
+            height: 30px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-index</h1>
+    <div class="parent">
+        <div class="child1">Child1</div>
+        <div class="child1">Child3</div>
+        <div class="child1">Child2</div>
+        <div class="child1">Child4</div>
+    </div>
+</body>
+</html>
