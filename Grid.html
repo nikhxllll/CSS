@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        h1{
+            font-family: monospace;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-bottom: 60px;
+        }
+        .grid{
+            /* margin-top: 40px; */
+            margin: 0 auto;
+            width: 60%;
+            height: 400px;
+            display: grid;
+            /* background: linear-gradient(90deg, hsla(270, 91%, 83%, 1) 0%, hsla(290, 56%, 56%, 1) 100%); */
+            grid-template-rows: 200px 200px;
+            grid-auto-rows: 200px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns : repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+        .item{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            font-weight: 700;
+            font-family: serif;
+        }
+        .item1{
+            background-color: red;
+        }
+        .item2{
+            background-color: skyblue;
+        }
+        .item3{
+            background-color: gray;
+        }
+        .item4{
+            background-color: darkolivegreen;
+        }
+        .item5{
+            background-color: brown;
+        }
+        .item6{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid</h1>
+    <div class="grid">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+        <div class="item item6">item6</div>
+    </div>
+    
+</body>
+</html>
