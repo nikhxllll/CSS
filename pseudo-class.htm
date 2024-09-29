@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .main{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: aqua; */
+            position: relative;
+
+        }
+        h1{
+            font-family: monospace;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .container{
+            color: black;
+        }
+        .container p::before{
+            width: 200px;
+            content: "BANKAI SAKASHIMA YOKOSHIMA HAPPOFUSAGIRI!!!";
+            /* margin-top: 20px; */
+            position: absolute;
+            top: 25px;
+            text-decoration: underline;
+            color: red;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Pseudo-Classes</h1>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil eaque necessitatibus aspernatur eius consequatur suscipit cum fugiat, reiciendis commodi atque nesciunt dolorem at natus voluptatum sapiente amet sed quasi eum, delectus voluptate aliquam ullam repellat. Doloremque ut nihil rerum neque dolorem laborum dolor nobis temporibus earum dolore velit excepturi qui mollitia minus necessitatibus ratione, ad quasi. Totam velit expedita temporibus debitis! Asperiores culpa atque possimus repudiandae assumenda? Vitae atque fugit veniam sequi ipsum obcaecati impedit esse totam? Quaerat quod tempore corporis provident iste neque molestiae quae blanditiis, delectus nemo culpa consectetur porro unde, qui ad facere commodi aperiam doloremque.          
+            </p>
+            <img src="../Aditya Image.jpg" alt="CHAINSAWMAN">
+
+        </div>
+
+    </div>
+`
+</body>
+</html>
